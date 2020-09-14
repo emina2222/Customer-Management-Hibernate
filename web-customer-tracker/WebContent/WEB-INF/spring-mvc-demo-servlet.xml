@@ -36,8 +36,8 @@
 	<bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
 		<property name="driverClass" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
 		<property name="jdbcUrl" value="jdbc:sqlserver://localhost:1433;databaseName=turisticka_agencija5;integratedSecurity=true;"/>
-		<property name="minPoolSize" value="5"/>
-		<property name="maxPoolSize" value="20"/>
+		<property name="minPoolSize" value="20"/>
+		<property name="maxPoolSize" value="50"/>
 		<property name="maxIdleTime" value="30000"/>
 	</bean>
 	
